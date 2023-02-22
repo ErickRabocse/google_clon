@@ -48,11 +48,11 @@ body {
   background-color: rgb(32, 33, 36);
   color: #fff;
   display: grid;
-  grid-template-rows: 10vh 50vh 30vh 10vh;
+  grid-template-rows: 10vh 80vh 10vh;
   grid-template-areas:
     "header"
     "main"
-    "empty"
+    /* "empty" */
     "footer";
 
   scrollbar-width: none; /*FIREFOX & EDGE*/
@@ -96,16 +96,7 @@ body::-webkit-scrollbar {
   margin-right: 10px;
   margin-left: 12px;
 }
-/* .img-box {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  margin-left: 12px;
-} */
+
 .header__icon_link:hover,
 .header__icon_link:focus {
   background-color: rgb(48 49 52);
@@ -113,9 +104,6 @@ body::-webkit-scrollbar {
 
 .header__profile {
   cursor: pointer;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -144,42 +132,39 @@ a.header__profile_photo:focus {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   grid-area: main;
 }
 
 .main__search-bar {
   width: 585px;
-  height: 45px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: center;
   border-radius: 50px;
-  outline: 1px solid rgb(95 99 103);
-  background-color: rgb(32, 33, 36);
   margin-top: 25px;
-
   margin-bottom: 25px;
 }
 
 #input-search {
-  position: absolute;
-  left: 55px;
-  padding-left: 0;
-  width: 65%;
+  width: 585px;
   height: 40px;
   border: none;
-  background-color: inherit;
+  border-radius: 50px;
+  background-color: rgb(32, 33, 36);
   color: white;
   font-size: 16px;
+  outline: 1px solid rgb(95 99 103);
+  padding-left: 50px;
+  padding-right: 100px;
 }
 
 .main__google_logo {
   width: 100%;
   height: 100px;
-  overflow: hidden;
+  margin-top: 40%;
   display: flex;
   justify-content: center;
 }
@@ -192,9 +177,12 @@ a.header__profile_photo:focus {
   height: 25px;
   width: 25px;
 }
-.main__icon-search,
 .main__icon-close {
   font-size: 15px;
+}
+.main__icon-search {
+  font-size: 15px;
+  line-height: 12px;
 }
 
 .main__icon:nth-child(2) {
@@ -242,9 +230,9 @@ a.header__profile_photo:focus {
 }
 
 /* EMPTY */
-.empty {
+/* .empty {
   grid-area: empty;
-}
+} */
 
 /* FOOTER */
 .footer {
@@ -306,7 +294,11 @@ a.header__profile_photo:focus {
     display: block;
   }
   body {
-    grid-template-rows: 10vh 45vh 30vh 15vh;
+    grid-template-rows: 10vh 75vh 15vh;
+  }
+
+  .main__google_logo {
+    margin-top: 30%;
   }
 }
 @media (max-width: 545px) {
@@ -315,7 +307,28 @@ a.header__profile_photo:focus {
     margin-bottom: 5px;
   }
   body {
-    grid-template-rows: 10vh 40vh 30vh 20vh;
+    grid-template-rows: 10vh 70vh 20vh;
+  }
+  .main__google_logo {
+    margin-top: 10%;
+  }
+
+  .main__search-bar {
+    width: 80%;
+    height: 40px;
+  }
+
+  #input-search {
+    width: 100%;
+    height: 40px;
+  }
+
+  .main__icon {
+    display: none;
+  }
+  .main__icon-close {
+    display: none;
+    border: none;
   }
 }
 
