@@ -159,11 +159,11 @@ a.header__profile_photo:focus {
   border-radius: 50px;
   outline: 1px solid rgb(95 99 103);
   background-color: rgb(32, 33, 36);
+  margin-top: 25px;
+
   margin-bottom: 25px;
 }
-/* .main__search-bar:hover {
-  background-color: rgb(48 49 52);
-} */
+
 #input-search {
   position: absolute;
   left: 55px;
@@ -177,19 +177,12 @@ a.header__profile_photo:focus {
 }
 
 .main__google_logo {
-  width: 400px;
-  height: 170px;
+  width: 100%;
+  height: 100px;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
-/* .main__google_logo img {
-  position: absolute;
-  clip: rect(100px, 50px, 100px, 50px);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 #input-search:hover {
   background-color: rgba(0, 0, 0, 0);
@@ -285,6 +278,7 @@ a.header__profile_photo:focus {
 }
 
 /* MEDIA QUERIES */
+
 @media (min-width: 900px) {
   .footer-link:nth-child(5) {
     margin-left: auto;
