@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/05e72eaf81.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" defer></script>
+    <title>Clon Google</title>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__list_link">
+          <a href="https://mail.google.com/">Gmail</a>
+        </li>
+        <li class="header__list_link">
+          <a href="https://www.google.com.mx/imghp?hl=es-419&authuser=0&ogbl"
+            >Imágenes</a
+          >
+        </li>
+      </ul>
+      <a href="#" class="header__icon_link">
+        <img
+          class="header__icon"
+          src="./images/circled_menu.png"
+          alt="Icon menu"
+        />
+      </a>
+      <a href="#" class="header__profile_photo">
+        <img
+          class="header__profile"
+          src="./images/profile_pic.webp"
+          alt="Profile picture"
+          width="100"
+        />
+      </a>
+    </header>
+
+    <main class="main">
+      <div id="main__logo">
+        <div class="main__google_logo">
+          <img
+            src="./images/googlelogo.png"
+            alt="Google brand logo"
+            height="200px"
+          />
+        </div>
+      </div>
+      <div class="main__search-bar">
+        <input type="text" id="input-search" />
+        <i
+          class="fa-solid fa-magnifying-glass main__icon main__icon-search"
+        ></i>
+        <div class="close main__icon">
+          <i class="fa-solid fa-xmark main__icon-close"></i>
+        </div>
+        <a href="#" class="main__icon">
+          <img
+            class="main__icon main__icon--voice"
+            src="./images/google-voice.png"
+            alt="Microphone icon"
+          />
+        </a>
+        <a href="#" class="main__icon">
+          <img
+            class="main__icon main__icon--lens"
+            src="./images/google_camera.svg"
+            alt="Camera icon"
+          />
+        </a>
+      </div>
+      <div class="main__buttons">
+        <button id="search">Buscar con Google</button>
+        <button id="lucky">
+          <a href="https://www.google.com/doodles">Voy a tener suerte</a>
+        </button>
+      </div>
+    </main>
+
+    <section class="empty"></section>
+
+    <footer class="footer">
+      <div class="country">México</div>
+      <ul class="footer__list">
+        <li class="footer-link">
+          <a
+            href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+            >Sobre Google</a
+          >
+        </li>
+        <li class="footer-link">
+          <a
+            href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+            >Publicidad</a
+          >
+        </li>
+        <li class="footer-link">
+          <a
+            href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+            >Negocios</a
+          >
+        </li>
+        <li class="footer-link">
+          <a href="https://google.com/search/howsearchworks/?fg=1"
+            >Cómo funciona la Búsqueda</a
+          >
+        </li>
+
+        <li class="footer-link">
+          <a href="https://policies.google.com/privacy?hl=es-419&fg=1"
+            >Privacidad</a
+          >
+        </li>
+        <li class="footer-link">
+          <a href="https://policies.google.com/terms?hl=es-419&fg=1"
+            >Condiciones</a
+          >
+        </li>
+        <li class="footer-link">
+          <a href="#">Preferencias</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
