@@ -306,6 +306,11 @@ a.header__profile_photo:focus {
     margin-top: 5px;
     margin-bottom: 5px;
   }
+
+  .footer-link {
+    padding-left: 10px;
+    margin: 3px;
+  }
   body {
     grid-template-rows: 10vh 70vh 20vh;
   }
